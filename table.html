@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Input Types Form</title>
+    
+ <link rel="stylesheet" href="style.css">
+    <style>
+        
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>MEDIA</h1>
+    <hr>
+
+ 
+    <h2>Image</h2>
+    <img src="BA.png" alt="Babar Pic" width="300">
+    <br><br>
+
+   
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="tone.mp3" type="audio/mp3">
+   
+    </audio>
+    <br><br>
+
+    <h4>Video</h4>
+    <video width="400" controls>
+        <source src="BAVIDEO.mp4" type="video/mp4">
+        
+    </video>
+    <br><br>
+
+  
+    <h2>Table Example</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>ali@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Hamza</td>
+            <td>hamza@gmail.com</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <h2>All Input Types Form</h2>
+    <form action="" method="get">
+
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text" placeholder="Enter text" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="100"><br><br>
+
+        <label for="range">Range (0-100):</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <label for="radio1">Gender:</label>
+        <input type="radio" id="radio1" name="gender" value="male"> Male
+        <input type="radio" id="radio2" name="gender" value="female"> Female
+        <br><br>
+
+        <label for="checkbox1">Is Alumni?</label>
+        <input type="checkbox" id="checkbox1" name="isAlumni">
+        <br><br>
+
+        <label for="color">Choose Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="datetime">Date & Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month"><br><br>
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week"><br><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="tel">Phone:</label>
+        <input type="tel" id="tel" name="tel" placeholder="03XX-XXXXXXX"><br><br>
+
+        <label for="url">Website URL:</label>
+        <input type="url" id="url" name="url" placeholder="https://example.com"><br><br>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search something..."><br><br>
+
+        <label for="hidden">Hidden Field:</label>
+        <input type="hidden" id="hidden" name="hidden" value="12345">(Hidden data not visible)<br><br>
+
+        <label for="button">Button:</label>
+        <input type="button" id="button" name="button" value="Click Me"><br><br>
+
+        <label for="reset">Reset Form:</label>
+        <input type="reset" id="reset" name="Reset"><br><br>
+
+        <label for="submit">Submit Form:</label>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+</body>
+</html>
