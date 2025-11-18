@@ -1,0 +1,199 @@
+/* cv.css - Final Version with Original Skills Style */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; 
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 4px solid #007acc;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: #1a1a1a;
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header p {
+    color: #007acc;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #e0e0e0;
+    outline: 3px solid #007acc;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img img:hover {
+    transform: scale(1.05);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 15px 0;
+}
+
+section h2 {
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* --- Contact List Styling (Retained Improvements) --- */
+.contact ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact li {
+    padding: 5px 0;
+    margin-bottom: 5px;
+    border-left: none;
+    padding-left: 0;
+    font-weight: 500;
+    color: #555;
+}
+
+.contact li::before {
+    content: "📧";
+    margin-right: 10px;
+    color: #007acc;
+}
+.contact li:nth-child(2)::before { content: "📞"; }
+.contact li:nth-child(3)::before { content: "🔗"; }
+.contact li:nth-child(4)::before { content: "🌐"; }
+
+/* --- Skills List Styling (REVERTED to Original Request) --- */
+.skills ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+}
+
+.skills li {
+    padding: 5px 0;
+    margin-bottom: 5px;
+    /* Reverting to the original vertical bar indicator */
+    border-left: 3px solid #007acc; 
+    padding-left: 10px;
+    /* Removing the hover and background styles from the 'tag' look */
+}
+
+/* --- Education Table --- */
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.education th, .education td {
+    padding: 15px 18px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.education th {
+    background-color: #007acc;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.education tr:nth-child(even) {
+    background-color: #f0f5ff;
+}
+
+/* --- Experience List --- */
+.experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience li {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 6px solid #007acc;
+    background-color: #fafafa;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.experience li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience li strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.experience ul ul {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.experience ul ul li {
+    margin-bottom: 5px;
+    padding: 0;
+    background-color: transparent;
+    border-left: none;
+}
+
+.experience ul ul li::before {
+    content: "•";
+    color: #007acc;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9em;
+}
